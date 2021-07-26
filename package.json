@@ -1,0 +1,19 @@
+{
+  "name": "@rasta-alex/deep-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/deep-copy.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "madrun test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "madrun": "^8.8.6",
+    "supertape": "^5.5.0"
+  }
+}
