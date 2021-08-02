@@ -1,7 +1,5 @@
-'use strict';
-
-const test = require('supertape');
-const deepCopyObj = require('..');
+import test from 'supertape';
+import deepCopyObj from '..';
 
 
 test('obj not equal another obj', (t) => {
@@ -20,26 +18,18 @@ test('obj not equal another obj', (t) => {
     t.end()
 })
 
-test.only('should not schange', (t) => {
-    const mainObj = {
-        a: 2,
-        b: 5,
-        c: {
-          x: 7,
-          y: 4,
-        },
-      }
-    const actual = deepCopyObj(mainObj);
-    delete actual.c.x;
-    const expected = {
-        a: 2,
-        b: 5,
-        c: {
-          x: 7,
-          y: 4,
-        },
-      };
+test('should not schange', (t) => {
+  const mainObj = {
+      a: 2,
+      b: 5,
+      c: {
+        x: 7,
+        y: 4,
+      },
+    }
+  const actual = deepCopyObj(mainObj);
+  delete actual.c.x;
 
-    t.ok(mainObj.c.x);
-    t.end()
-})
+  t.ok(mainObj.c.x);
+  t.end()
+});

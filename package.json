@@ -1,31 +1,1 @@
-{
-  "name": "@rasta-alex/deep-copy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "lib/deep-copy.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "scripts": {
-    "lint": "madrun lint",
-    "fix:lint": "madrun fix:lint",
-    "report": "madrun report",
-    "coverage": "madrun coverage",
-    "test": "madrun test",
-    "watch:coverage": "madrun watch:coverage",
-    "watch:test": "madrun watch:test",
-    "watcher": "madrun watcher"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^7.31.0",
-    "eslint-plugin-putout": "^8.1.0",
-    "madrun": "^8.8.6",
-    "nyc": "^15.1.0",
-    "putout": "^18.8.0",
-    "supertape": "^5.5.0"
-  }
-}
+{  "name": "@rasta-alex/deep-copy",  "version": "1.0.0",  "description": "",  "main": "lib/deep-copy.js",  "type": "module",  "directories": {    "lib": "lib",    "test": "test"  },  "scripts": {    "lint": "madrun lint",    "fix:lint": "madrun fix:lint",    "report": "madrun report",    "coverage": "madrun coverage",    "test": "madrun test",    "watch:coverage": "madrun watch:coverage",    "watch:test": "madrun watch:test",    "watcher": "madrun watcher"  },  "keywords": [],  "author": "",  "license": "ISC",  "devDependencies": {    "eslint": "^7.31.0",    "eslint-plugin-putout": "^8.1.0",    "estrace": "^2.1.0",    "madrun": "^8.8.6",    "nyc": "^15.1.0",    "putout": "^18.8.0",    "supertape": "^5.5.0"  }}

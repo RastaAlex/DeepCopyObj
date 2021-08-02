@@ -1,14 +1,14 @@
-'use strict';
+import {run} from 'madrun';
 
-const {run} = require('madrun');
-
-module.exports = {
-    'lint': () => 'putout lib/deep-copy.js',
+export default {
+    'lint': () => 'putout .',
+    'fresh:lint': () => run('lint', '--fresh'),
+    'lint:fresh': () => run('lint', '--fresh'),
     'fix:lint': () => run('lint', '--fix'),
-    'report': () => 'nyc report --reporter=text-lcov | coveralls',
-    'coverage': () => 'nyc npm test',
+    'report': () => 'c8 report --reporter=lcov',
+    'coverage': () => 'c8 npm test',
     'test': () => 'supertape test/*.js',
     'watch:coverage': () => run('watcher', 'npm run coverage'),
     'watch:test': () => run('watcher', 'npm test'),
-    'watcher': () => 'nodemon -w test -w --exec',
+    'watcher': () => 'nodemon -w test -w --exec'
 };

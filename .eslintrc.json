@@ -1,7 +1,12 @@
 {
+    "rules": {
+        "putout/putout": ["error", {
+            "convert-esm-to-commonjs": "off"
+        }]
+    },
     "extends": [
-        "plugin:putout/recommended",
-        "plugin:node/recommended"
+        "plugin:node/recommended",
+        "plugin:putout/recommended"
     ],
     "plugins": [
         "putout",
